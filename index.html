@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "calculatorPage">
+        <div id = "calculator">
+            <div id = "calculatorHeader">
+                <div class = "themeText">
+                    <div class = "calcText">calc</div>
+                </div>
+                <div class = "themeChoosers">
+                    <div class = "calcText">THEME</div>
+                    <div class = "themeButtonContainer">
+                        <div class = "themeNumbering">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                        </div>
+                        <div class = "themeButtons">
+                            <button id = "button1"></button>
+                            <button id = "button2"></button>
+                            <button id = "button3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id = "calculatorDisplay">
+                <div class = "secondDisplayContainer">
+                    <div class = "signs"></div>
+                    <div class = "dummy-display"></div>   
+                </div>
+                  <div class = "first-display"></div>
+            </div>
+            <div id = "calculatorButtons">
+                <div class = "buttonSection1">
+                    <button class = "operands">7</button>
+                    <button class ="operands">8</button>
+                    <button class = "operands">9</button>
+                    <button class = "deleteBtn">DEL</button>
+                </div>
+                <div class = "buttonSection1">
+                    <button class = "operands">4</button>
+                    <button class = "operands">5</button>
+                    <button class = "operands">6</button>
+                    <button class = "additionBtn">+</button>
+                </div>
+                <div class = "buttonSection1">
+                    <button class = "operands">1</button>
+                    <button class = "operands">2</button>
+                    <button class = "operands">3</button>
+                    <button class = "subtractionBtn">-</button> 
+                </div>
+                <div class = "buttonSection1">
+                    <button class = "decimalPoint">.</button>
+                    <button class = "operands">0</button>
+                    <button class = "divisionBtn">/</button>
+                    <button class = "multiplicationBtn">x</button>
+                </div>
+                <div class = "buttonSection2">
+                    <button class = "allClear">RESET</button>
+                    <button class = "equalsToBtn">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
