@@ -1,0 +1,353 @@
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+/*general attributes*/
+#calculatorPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60,73,103);
+    width: 100vw;
+    height: 100vh;
+}
+#calculator{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(60,73,103);
+    min-height: 85vh;
+}
+#calculatorHeader{
+    display: flex;
+    color: white;
+    align-items: center;
+    height: 8vh;
+}
+.themeText{
+    font-size: 25px;
+}
+.calcText{
+    color: white;
+}
+.themeChoosers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items:flex-end ;
+    font-size: 10px;
+}
+.themeNumbering{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3px;
+    font-size:10px;
+}
+.themeButtonContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.themeButtons{
+    display: flex;
+    background-color: rgb(35,44,67);
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    height: 3vh;
+}
+.themeButtons button{
+    background-color: rgb(35,44,67);
+    color:rgb(35,44,67); ;
+    border: none;
+    border-radius: 100%;
+    height: 2vh;
+}
+#button1{
+    background: hsl(6, 63%, 50%)
+}
+
+/* calculatorHeader styling ends here */
+
+#calculatorDisplay{
+    margin-top: 4vh;
+    border-radius: 6px;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    background-color: rgb(24,32,52);
+    color: white;
+}
+.first-display{
+    text-align: right;
+    width: 100%;
+    min-height: 50%;
+    font-size: 22px;
+}
+.second-display{
+    text-align: right;
+    width: 100%;
+    min-height: 50%;
+}
+.secondDisplayContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    width: 100%;
+    min-height: 50%;
+}
+
+/* display styling ends here */
+#calculatorButtons{
+    background-color: rgb(24,32,52);
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    height: 56vh;
+}
+.buttonSection1{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    gap: 8px;
+}
+.operands{
+    background: white;
+    color: rgb(68,75,90);
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    font-weight: 900;
+    height: 7.1vh;
+    font-size: 23px;
+    border-radius: 5px;
+}
+.additionBtn{
+    background: white;
+    color: rgb(68,75,90);
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    height: 7.1vh;
+    font-size: 23px;
+    border-radius: 5px;
+}
+.subtractionBtn{
+    background: white;
+    color: rgb(68,75,90);
+    font-weight: 700;
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    height: 7.1vh;
+    font-size: 23px;
+    border-radius: 5px;
+}
+.multiplicationBtn{
+    background: white;
+    color: rgb(68,75,90);
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    height: 7.1vh;
+    font-size: 23px;
+    border-radius: 5px;
+}
+.divisionBtn{
+    background: white;
+    color: rgb(68,75,90);
+    font-weight: 700;
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    height: 7.1vh;
+    font-size: 23px;
+    border-radius: 5px;
+}
+.decimalPoint{
+    color: rgb(68,75,90);
+    font-weight: 700;
+    border: none;
+    box-shadow: 0px 4px 0px rgb(180,165,151);
+    height: 7.1vh;
+    font-size: 23px;
+    border-radius: 5px;
+}
+.buttonSection2{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    gap: 8px;
+}
+.buttonSection2 button{
+    border: none;
+    height: 7.3vh;
+    border-radius: 5px;
+}
+.equalsToBtn{
+    color: white;
+    background: hsl(6, 63%, 50%);
+    box-shadow: 0px 4px 0px hsl(6, 70%, 34%);
+    font-weight: 700;
+    font-size: 15px;
+    font-weight: 700;
+}
+.allClear{
+    color: white;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
+    font-weight: 700;
+    font-size: 15px;
+    font-weight: 700;
+}
+.deleteBtn{
+    color: white;
+    font-weight: 700;
+    border: none;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px 0px hsl(224, 28%, 35%); 
+    height: 7.1vh;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+@media(min-width: 1200px){
+    #calculator{
+        width: 30vw;
+    }
+    .themeText{
+        width: 16.5vw;
+    }
+    .themeChoosers{
+        width: 14.5vw;
+    }
+    .themeButtons{
+        width: 4vw;
+    }
+    .buttonSection1 button{
+        width: 6.3vw;
+    }
+    .buttonSection2 button{
+        width: 13.2vw;
+    }
+}
+@media(min-width: 1000px) and (max-width:1200px){
+    #calculator{
+        width: 35vw;
+    }
+    .themeText{
+        width: 19vw;
+    }
+    .themeChoosers{
+        width: 15vw;
+    }
+    .themeButtons{
+        width: 5vw;
+    }
+    .buttonSection1 button{
+        width: 7.5vw;
+    }
+    .buttonSection2 button{
+        width: 16vw;
+    }
+}
+@media(min-width: 800px) and (max-width:1000px){
+#calculator{
+    width: 40vw;
+}
+.themeText{
+    width: 23vw;
+}
+.themeChoosers{
+    width: 16vw;
+}
+.themeButtons{
+    width: 6vw;
+}
+.buttonSection1 button{
+    width: 8.5vw;
+}
+.buttonSection2 button{
+    width: 18vw;
+}
+}
+@media(min-width: 700px) and (max-width:800px){
+    #calculator{
+        width: 50vw;
+    }
+    .themeText{
+        width: 28vw;
+    }
+    .themeChoosers{
+        width: 21vw;
+    }
+    .themeButtons{
+        width: 7vw;
+    }
+    .buttonSection1 button{
+        width: 11vw;
+    }
+    .buttonSection2 button{
+        width: 23vw;
+    }
+}
+@media(min-width: 576px) and (max-width: 699px){
+    #calculator{
+        width: 60vw;
+    }
+    .themeChoosers{
+        width: 27vw;
+    }
+    .themeText{
+        width: 28vw;
+    }
+    .themeButtons{
+        width: 9vw;
+    }
+    .buttonSection1 button{
+        width: 13.5vw;
+    }
+    .buttonSection2 button{
+        width: 28vw;
+    }
+}
+@media(min-width: 421px) and (max-width: 575px){
+#calculator{
+    width: 67vw;
+}
+.themeText{
+    width: 36vw;
+}
+.themeChoosers{
+    width: 30vw;
+}
+.themeButtons{
+    width: 12vw;
+}
+.buttonSection1 button{
+    width: 14vw;
+}
+.buttonSection2 button{
+     width: 30vw;
+}
+}
+@media(max-width:420px){
+    #calculator{
+        width: 88vw;
+    }
+    .themeText{
+        width: 48vw;
+    }
+    .themeChoosers{
+        width: 38vw;
+    }
+    .themeButtons{
+        width: 18vw;
+    }
+    .buttonSection1 button{
+        width: 18vw;
+    }
+    .buttonSection2 button{
+        width: 38vw;
+    }
+}
